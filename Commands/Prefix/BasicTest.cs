@@ -5,7 +5,7 @@ using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
 using DSharpPlus.Interactivity.Extensions;
 
-namespace CsharpBot.commands
+namespace CsharpBot.Commands.Prefix
 {
     //Every Command class must be PUBLIC and must inherit BaseCommandModule
     public class BasicTest : BaseCommandModule

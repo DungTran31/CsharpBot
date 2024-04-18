@@ -4,7 +4,7 @@ using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
 
-namespace CsharpBot.commands
+namespace CsharpBot.Commands.Prefix
 {
     internal class TestCommands : BaseCommandModule
     {

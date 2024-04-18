@@ -2,7 +2,7 @@
 using DSharpPlus.CommandsNext;
 using System.Threading.Tasks;
 
-namespace CsharpBot.commands
+namespace CsharpBot.Commands.Prefix
 {
     public class Basic : BaseCommandModule
     {

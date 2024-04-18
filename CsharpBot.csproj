@@ -145,17 +145,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="commands\Basic.cs" />
-    <Compile Include="commands\BasicTest.cs" />
-    <Compile Include="commands\TestCommands.cs" />
-    <Compile Include="config\JSONReader.cs" />
-    <Compile Include="other\CardSystem.cs" />
+    <Compile Include="Commands\Prefix\Basic.cs" />
+    <Compile Include="Commands\Prefix\BasicTest.cs" />
+    <Compile Include="Commands\Prefix\TestCommands.cs" />
+    <Compile Include="Commands\Slash\BasicSL.cs" />
+    <Compile Include="Commands\Slash\CalculatorSL.cs" />
+    <Compile Include="Config\JSONReader.cs" />
+    <Compile Include="Other\CardSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="config\config.json" />
+    <None Include="Config\config.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
