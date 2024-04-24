@@ -74,6 +74,8 @@ namespace CsharpBot
 
             // 8. Register your commands classes
             Commands.RegisterCommands<Basic>();
+            Commands.RegisterCommands<DiscordComponentExamples>();
+
             //Registering Slash Commands
             slashCommandsConfig.RegisterCommands<BasicSL>();
             slashCommandsConfig.RegisterCommands<CalculatorSL>();

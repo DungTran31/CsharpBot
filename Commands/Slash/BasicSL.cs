@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using DSharpPlus;
 using DSharpPlus.Entities;
 using DSharpPlus.SlashCommands;
 
@@ -52,6 +53,17 @@ namespace CsharpBot.Commands.Slash
             };
 
             await ctx.EditResponseAsync(new DiscordWebhookBuilder().AddEmbed(embedMessage));
+        }
+
+        [SlashCommand("modal", "Show a modal")]
+        public async Task ModalCommand(InteractionContext ctx)
+        {
+            var modal = new DiscordInteractionResponseBuilder()
+                .WithTitle("Test Modal")
+                .WithCustomId("modal")
+                .AddComponents(new TextInputComponent(label: "Random", "randomTextBox", "Type something here"));
+
+            await ctx.CreateResponseAsync(InteractionResponseType.Modal, modal);
         }
     }
 }
